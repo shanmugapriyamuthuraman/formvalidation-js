@@ -6,7 +6,41 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
-	<script>	
-	</script>
+	<section class="container">
+		<form class="form" id="form" action="" >
+			<div class="form-control">
+			<label for="username">User Name</label>
+			<input type="text" placeholder="enter your name" value="" id="username">
+			</div>
+			<div class="form-control">
+			<label for="useremail">User Email</label>
+			<input type="text" placeholder="enter your email" value="" id="useremail" >
+			</div>
+			<div class="form-control">
+			<label for="userpassword">User Password</label>
+			<input type="text" placeholder="enter your password" value="" id="userpassword">
+			</div>
+			<input type="submit" id="submit" >
+		</form>
+	
+	</section>
+	<script>
+	function myfunction(){
+		let Name=document.getElementById("username").value;
+		let Email=document.getElementById("useremail").value;
+		let Password=document.getElementById("userpassword").value;
+		<!-- let Password1=document.getElementById("userpassword1").value; -->
+		if(Name=""){
+			alert("please enter your name");
+		}
+		else if(Email=""){
+			alert("please enter your email");
+		}
+		else if(Password=""){
+			alert("please enter your password ");
+		}
+		
+	}
+	
 </body>
 </html>	
