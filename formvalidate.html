@@ -4,6 +4,7 @@
 	<meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="style.css"
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<script src="https://code.iconify.design/iconify-icon/1.0.0-beta.3/iconify-icon.min.js"></script>
 </head>
@@ -13,48 +14,71 @@
 			<div class="form-control">
 			<label for="username">User Name</label>
 			<input type="text" placeholder="enter your name" value="" id="username">
-			<iconify-icon icon="material-symbols:check-circle"></iconify-icon>
-			<iconify-icon icon="bi:exclamation-circle-fill"></iconify-icon>
+			<!-- <iconify-icon icon="material-symbols:check-circle"></iconify-icon> -->
+			<!-- <iconify-icon icon="bi:exclamation-circle-fill"></iconify-icon> -->
 			</div>
 			<div class="form-control">
 			<label for="useremail">User Email</label>
 			<input type="text" placeholder="enter your email" value="" id="useremail" >
-			<iconify-icon icon="material-symbols:check-circle"></iconify-icon>
-			<iconify-icon icon="bi:exclamation-circle-fill"></iconify-icon>
+			<!-- <iconify-icon icon="material-symbols:check-circle"></iconify-icon> -->
+			<!-- <iconify-icon icon="bi:exclamation-circle-fill"></iconify-icon> -->
 			</div>
 			<div class="form-control">
 			<label for="userpassword">User Password</label>
 			<input type="text" placeholder="enter your password" value="" id="userpassword">
-			<iconify-icon icon="material-symbols:check-circle"></iconify-icon>
-			<iconify-icon icon="bi:exclamation-circle-fill"></iconify-icon>
+			<!-- <iconify-icon icon="material-symbols:check-circle"></iconify-icon> -->
+			<!-- <iconify-icon icon="bi:exclamation-circle-fill"></iconify-icon> -->
 			</div>
 			<div class="form-control">
 			<label for="confirm-password">confirm Password</label>
 			<input type="text" placeholder="enter your password" value="" id="confirmpassword">
-			<iconify-icon icon="material-symbols:check-circle"></iconify-icon>
-			<iconify-icon icon="bi:exclamation-circle-fill"></iconify-icon>
+			<!-- <iconify-icon icon="material-symbols:check-circle"></iconify-icon> -->
+			<!-- <iconify-icon icon="bi:exclamation-circle-fill"></iconify-icon> -->
 			</div>
 			<input type="submit" id="submit" >
 		</form>
 	
 	</section>
 	<script>
-	function myfunction(){
-		let Name=document.getElementById("username").value;
-		let Email=document.getElementById("useremail").value;
-		let Password=document.getElementById("userpassword").value;
-		<!-- let Password1=document.getElementById("userpassword1").value; -->
-		if(Name=""){
-			alert("please enter your name");
-		}
-		else if(Email=""){
-			alert("please enter your email");
-		}
-		else if(Password=""){
-			alert("please enter your password ");
-		}
+		const form=document.getElementById("form");
+		const username=document.getElementById("username").value;
+		const useremail=document.getElementById("useremail").value;
+		const userpassword=document.getElementById("userpassword").value;
+		const confirmpassword=document.getElementById("confirmpassword").value;
 		
-	}
+		const but=document.getElementById("submit");
+		submit.addEventListener("submit",checkinput)
+		function checkinput(){
+			if(usernamevalue===""){
+				alert("please enter your name")
+			}
+			else if(useremailvalue===""){
+				alert("please enter your email")
+			}
+			else if(userpasswordvalue===""){
+				alert("please enter your password")
+			}
+			else if(userconfirmpasswordvalue===""){
+				alert("please enter your confirmpassword")
+			}
+		}
+			
+	<!-- function myfunction(){ -->
+		<!-- let Name=document.getElementById("username").value; -->
+		<!-- let Email=document.getElementById("useremail").value; -->
+		<!-- let Password=document.getElementById("userpassword").value; -->
+		<!-- let Password1=document.getElementById("userpassword1").value; -->
+		<!-- if(Name=""){ -->
+			<!-- alert("please enter your name"); -->
+		<!-- } -->
+		<!-- else if(Email=""){ -->
+			<!-- alert("please enter your email"); -->
+		<!-- } -->
+		<!-- else if(Password=""){ -->
+			<!-- alert("please enter your password "); -->
+		<!-- } -->
+		
+	<!-- } -->
 	
 </body>
 </html>	
